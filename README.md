@@ -1,61 +1,51 @@
-Expense-Tracker-Application
+## **Features**
 
-A simple desktop Expense Tracker built with Tkinter and SQLite. Opens as a GUI window when you run the script — log daily expenses, set monthly budgets per category, get budget alerts, and view reports.
+1. **Add daily expenses**: date, category, amount, description
+2. **Set monthly budgets per category** (YYYY-MM)
+3. **Automatic alert** when a category's monthly spending exceeds its budget
+4. **View total spending** for a month and a **Spending vs Budget** comparison report
+5. Desktop **GUI** that pops up on run (no terminal menus)
+6. Small, **single-file SQLite database** created automatically
 
-Features
+## **Tech Stack**
 
-Add daily expenses: date, category, amount, description
+- **Python 3.8+** (no external packages required)
+- **GUI**: Tkinter (built into Python)
+- **Database**: SQLite (file-based DB inside project folder)
 
-Set monthly budgets per category (YYYY-MM)
+## **Getting Started (Run in VSCode / Locally)**
 
-Automatic alert when a category's monthly spending exceeds its budget
+1. **Install Python**: Ensure Python 3.8 or newer is installed. Verify with:
+   bash
+   python --version
+`
 
-View total spending for a month and a Spending vs Budget comparison report
+2. **Clone this repository**:
 
-Desktop GUI that pops up on run (no terminal menus)
+   bash
+   git clone <repository_link>
+   cd <project_folder>
+   
 
-Small, single-file SQLite database created automatically
+3. **Open in VSCode**:
 
-Tech stack
+   * File → Open Folder → select the repository folder.
 
-Python 3.8+ (no external packages required)
+4. **Run the app** by opening the **VSCode terminal** and running:
 
-GUI: Tkinter (built into Python)
+   bash
+   python expense_tracker.py
+   
 
-Database: SQLite (file-based DB inside project folder)
+   * The **GUI window** will pop up. No other dependencies or setup required.
 
-Getting started (Run in VSCode / locally)
+## **How to Use**
 
-Install Python. Ensure Python 3.8 or newer is installed. Verify with:
+1. **Fill in the Date, Category, Amount**, and optional **Description**; click **Add Expense** to record a transaction.
+2. To **set a monthly budget**: enter **Month (YYYY-MM)**, **Category**, **Budget Amount** → **Save Budget**.
+3. To check **reports**: enter **Report Month (YYYY-MM)** → click **Total Spending** or **Spending vs Budget**.
+4. The application will **automatically alert** if spending for a category exceeds its assigned budget.
 
-python --version
+## **Database Details**
 
-Clone this repository:
-
-git clone <repository_link>
-
-cd <project_folder>
-
-Open in VSCode:
-
-File → Open Folder → select the repository folder.
-
-Run the app by opening the VSCode terminal  and running:
-
-python expense_tracker.py
-
-The GUI window will pop up. No other dependencies or setup required.
-
-How to use
-
-Fill in the Date, Category, Amount, and optional Description; click Add Expense to record a transaction.
-
-To set a monthly budget: enter Month (YYYY-MM), Category, Budget Amount → Save Budget.
-
-To check reports: enter Report Month (YYYY-MM) → click Total Spending or Spending vs Budget.
-
-The application will automatically alert if spending for a category exceeds its assigned budget.
-
-Database details
-
-Database file: expense_tracker.db (created in the same folder when the app runs)  when i upload this info inreadme file the side heading shd be in large size with bold
+* **Database file**: `expense_tracker.db`
